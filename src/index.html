@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="output.css">
+</head>
+<body class="flex justify-center items-center min-h-screen bg-gray-100">
+  <div class="container bg-emerald-300 w-full md:w-1/2 mx-10  my-10 p-5 rounded-2xl hover:shadow-lg transition-shadow duration-300 ease-in-out">
+    <div class="text-center">
+      <h1 class="text-slate-100 font-medium text-2xl pt-5">Weather App</h1>
+      <div class="p-4 flex justify-center">
+        <input class="bg-white outline-none rounded-lg w-2/3 py-2 px-3 focus:ring-2 focus:ring-emerald-500 transition duration-300 ease-in-out" type="text" id="city-input" placeholder="Search city">
+      </div>
+      <div class="flex justify-center mt-3">
+        <button class="bg-emerald-100 py-2 px-3 rounded-lg w-32 text-lg hover:bg-emerald-600 hover:text-white focus:ring-2 focus:ring-emerald-500 transition duration-300 ease-in-out" type="submit">Search</button>
+      </div>
+    </div>
+
+    <div class="text-center text-white mt-5">
+      <h1 id="city-name" class="text-2xl font-bold animate-fade-in">--------</h1>
+      <h1 id="weather-type" class="text-xl mt-2 animate-fade-in">------------</h1>
+    </div>
+
+    <div class="text-center pb-5 mt-5">
+      <h3 class="text-lg">Temp: <span id="temp" class="animate-fade-in">--------</span>°F</h3>
+      <h3 class="text-lg mt-2">Min Temp: <span id="min-temp" class="animate-fade-in">--------</span>°F</h3>
+      <h3 class="text-lg mt-2">Max Temp: <span id="max-temp" class="animate-fade-in">--------</span>°F</h3>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
